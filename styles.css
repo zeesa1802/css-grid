@@ -42,16 +42,18 @@ h5 {
 
 .most-popular-header {
   padding: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .most-popular-scroll-btn {
-  display: inline;
-  float: right;
+  /* display: inline; */
+  /* float: right; */
   /* margin-right: 2rem; */
   font-size: 2rem;
   color: black;
   font-weight: 900;
-  font-size: x-large;
+  font-size: 1.8rem;
 }
 
 .media-scroller {
