@@ -3,6 +3,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -31,6 +32,26 @@ h5 {
 
 .section-title {
   padding: 1rem;
+}
+
+.most-popular-title {
+  display: inline-block;
+  /* padding-left: 2rem; */
+  /* float: left; */
+}
+
+.most-popular-header {
+  padding: 2rem;
+}
+
+.most-popular-scroll-btn {
+  display: inline;
+  float: right;
+  /* margin-right: 2rem; */
+  font-size: 2rem;
+  color: black;
+  font-weight: 900;
+  font-size: x-large;
 }
 
 .media-scroller {
@@ -72,7 +93,7 @@ h5 {
   /* inline-size: 100%; */
   /* aspect-ratio: 16 / 9; */
   object-fit: cover;
-  width: 33rem;
+  width: 32rem;
   height: 50rem;
   border-radius: 1rem;
 }
@@ -87,7 +108,20 @@ h5 {
   width: 16.5rem;
   font-size: 2.4rem;
 }
-
+.popular-item-tag {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: inline;
+  padding: 0.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
 .snaps-inline {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: var(--_spacer, 1rem);
@@ -170,4 +204,10 @@ h5 {
   color: whitesmoke;
   font-weight: bolder;
   font-size: 2.4rem;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 46.5%;
+  }
 }

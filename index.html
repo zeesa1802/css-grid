@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main class="main">
       <h1 class="section-title">Welcome</h1>
       <h5 class="section-title">Best Taste You Wish For</h5>
-      <h3 class="section-title">Most Popular</h3>
+      <div class="most-popular-header">
+        <h3 class="most-popular-title">Most Popular</h3>
+        <button class="most-popular-scroll-btn">Next</button>
+      </div>
 
       <div class="media-scroller snaps-inline no-scrollbar">
         <div class="media-element">
@@ -20,6 +24,7 @@
             alt=""
           />
           <p class="popular-item-title">Short title</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -27,6 +32,7 @@
             alt=""
           />
           <p class="popular-item-title">A longer title here</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -34,6 +40,7 @@
             alt=""
           />
           <p class="popular-item-title">An even longer title on this one</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -41,6 +48,7 @@
             alt=""
           />
           <p class="popular-item-title">A dog that's blinking?</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -48,6 +56,7 @@
             alt=""
           />
           <p class="popular-item-title">Chair</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -55,6 +64,7 @@
             alt=""
           />
           <p class="popular-item-title">Ut enim ad minim veniam</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -62,6 +72,7 @@
             alt=""
           />
           <p class="popular-item-title">Duis aute irure dolor</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -69,6 +80,7 @@
             alt=""
           />
           <p class="popular-item-title">Cillum dolore eu</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -76,6 +88,7 @@
             alt=""
           />
           <p class="popular-item-title"></p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -85,6 +98,7 @@
           <p class="popular-item-title">
             Excepteur sint occaecat cupidatat non proident
           </p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -92,6 +106,7 @@
             alt=""
           />
           <p class="popular-item-title">At lectus urnaVestibulum</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -99,6 +114,7 @@
             alt=""
           />
           <p class="popular-item-title">Vestibulum</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -108,6 +124,7 @@
           <p class="popular-item-title">
             Adipiscing tristique risus nec feugiat
           </p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -117,6 +134,7 @@
           <p class="popular-item-title">
             Rutrum tellus pellentesque eu tincidunt
           </p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -124,6 +142,7 @@
             alt=""
           />
           <p class="popular-item-title">Bibendum enim</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -131,6 +150,7 @@
             alt=""
           />
           <p class="popular-item-title">Amet commodo</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -138,6 +158,7 @@
             alt=""
           />
           <p class="popular-item-title">A erat nam at lectus</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -147,6 +168,7 @@
           <p class="popular-item-title">
             Pellentesque eu tincidunt tortor aliquam nulla
           </p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -154,6 +176,7 @@
             alt=""
           />
           <p class="popular-item-title">Quam adipiscing vitae</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
         <div class="media-element">
           <img
@@ -161,6 +184,7 @@
             alt=""
           />
           <p class="popular-item-title">Fermentum</p>
+          <div class="popular-item-tag">My Tag</div>
         </div>
       </div>
       <div class="menu-grid">
@@ -194,8 +218,6 @@
           <p class="menu-item-title">Short title</p>
         </div>
 
-        <!-- <div class="menu-items grid-item">Menu Item1</div> -->
-        <!-- <div class="menu-items grid-item">Menu Item2</div> -->
         <div class="footer grid-item">
           <div class="footer-title">Powerd By</div>
           <div class="footer-brand">Real Meals</div>
