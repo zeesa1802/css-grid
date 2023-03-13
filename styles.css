@@ -2,7 +2,7 @@
 @import 'https://unpkg.com/open-props/normalize.min.css';
 
 .main {
-  width: 600px;
+  width: 500px;
 }
 
 .section-title {
@@ -12,11 +12,12 @@
 .media-scroller {
   --_spacer: var(--size-3);
   display: grid;
-  gap: var(--_spacer);
+  /* gap: var(--_spacer); */
   grid-auto-flow: column;
-  grid-auto-columns: 85%;
+  grid-auto-columns: 70%;
+  grid-auto-rows: 500px;
 
-  padding: 0 var(--_spacer) var(--_spacer);
+  /* padding: 0 var(--_spacer) var(--_spacer); */
 
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -32,19 +33,34 @@
 }
 
 .media-element {
-  display: grid;
-  grid-template-rows: min-content;
-  gap: var(--_spacer);
-  padding: var(--_spacer);
-  background: var(--surface-2);
+  /* display: grid;
+  grid-template-rows: min-content; */
+  /* gap: var(--_spacer);
+  padding: var(--_spacer); */
+  /* background: var(--surface-2); */
   border-radius: var(--radius-2);
-  box-shadow: var(--shadow-2);
+  /* box-shadow: var(--shadow-2); */
+  position: relative;
+  margin: auto;
 }
 
 .media-element > img {
-  inline-size: 100%;
-  aspect-ratio: 16 / 9;
+  /* inline-size: 100%; */
+  /* aspect-ratio: 16 / 9; */
   object-fit: cover;
+  width: 330px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.popular-item-title {
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  color: whitesmoke;
+  font-weight: bolder;
+  word-wrap: normal;
+  width: 150px;
 }
 
 .snaps-inline {
@@ -59,7 +75,7 @@
 /* general styling */
 
 .menu-grid {
-  width: 600px;
+  width: 500px;
   /* margin: 6px auto; */
   /* margin-left: 10px; */
   padding: 10px;
@@ -112,6 +128,15 @@
 .footer-brand {
   color: rgb(246, 84, 138);
 }
-/* .media-element-2 {
-  padding: 20px;
-} */
+.media-element-2 {
+  /* padding: 20px; */
+  position: relative;
+}
+
+.menu-item-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: whitesmoke;
+  font-weight: bolder;
+}
